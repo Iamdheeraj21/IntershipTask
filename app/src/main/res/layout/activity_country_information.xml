@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryInformation">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/countryFlag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country Name"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/countryFlag"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/countryName"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country Capital"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/countryName"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/countryCapital"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country Region"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/countryCapital"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/countryRegion"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country SubRegion"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/countryRegion"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/countrySubRegion"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country population"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/countrySubRegion"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/countryPopulation"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete this country information"
+                android:id="@+id/deleteCountry"
+                android:layout_below="@id/countryPopulation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
